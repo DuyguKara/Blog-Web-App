@@ -20,6 +20,6 @@ Kodların detaylı çalışma mantığı yorum satırında belirtilmiştir.
 
 ## Projeyi Çalıştırmak İçin
 
-Öncelikle Node.js kurulumu yapılmalı ve terminale proje dizinindeyken npm install komutu yazılıp çalıştırılmalıdır. Bu şekilde projenin içerdiği bağımlılıklar yüklenecek ve node_modules dosyası eklenecektir. Daha sonra node index.js komutu ile sunucu çalıştırılabilir. localhost:3000 adresine bir tarayıcıdan gidildiğinde web uygulamasına erişebilir ve üstünde işlemlerini yapabilirsiniz. Sunucuyu kapatmak için terminale ctrl+c komutunu girmelisiniz.
+Öncelikle Node.js kurulumu yapılmalı ve terminale proje dizinindeyken npm install komutu yazılıp çalıştırılmalıdır. Bu şekilde projenin içerdiği bağımlılıklar yüklenecek ve node_modules dizini eklenecektir. Daha sonra node index.js komutu ile sunucu çalıştırılabilir. localhost:3000 adresine bir tarayıcıdan gidildiğinde web uygulamasına erişebilir ve üstünde işlemlerini yapabilirsiniz. Sunucuyu kapatmak için terminale ctrl+c komutunu girmelisiniz.
 
 *Not: Projenin sunucusu 3000 portunda çalışacak şekilde ayarlanmıştır. Eğer 3000 portunda çalışan başka bir sunucu varsa projeyi çalıştıramazsınız. Portun boş olduğundan emin olun.*
