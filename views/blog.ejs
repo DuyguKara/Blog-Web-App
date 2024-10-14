@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+
+    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/modal.css">
+    <link rel="stylesheet" href="../styles/dropdown.css">
+    <link rel="stylesheet" href="../styles/edit-modal.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <div class="nav-flex">
+            <a id="home-link" href="/">Home</a>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--  <div class="head-of-post">
+             <div class="head-content">
+                 <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                 <div class="flex-container">
+                     <img src="../assests/imgs/Banner.png">
+                     <p>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare lorem ex, vitae tempus lorem iaculis ac. Phasellus sed tempus ligula. Integer a ligula mattis, auctor mauris in, tempor risus. Vestibulum et tellus eleifend, venenatis neque non, ullamcorper ligula. Donec tempus urna nunc, non rhoncus ligula tristique quis. Sed nec felis et diam semper mattis ac a sapien. Proin mattis dui eget metus suscipit, eget auctor nunc eleifend. Aenean magna quam, accumsan quis risus quis, vehicula posuere urna. Proin nisi purus, tempor quis nibh non, viverra eleifend risus.</p>
+                 </div>
+             </div>
+         </div> -->
+ 
+         <% if (locals.post) { %>
+         <h1><%= post.name %></h1>
+ 
+         <div class="head-of-post">
+            <img src="/uploads/<%= post.img %>">
+             <p><%= post.sum %></p>
+         </div>
+ 
+ 
+         <div class="content">
+             <p><%= post.content %></p>
+         </div>
+
+         <% } else { %>
+            <p>No posts available.</p>
+        <% } %>
+     </main>
+
+     <%- include("partials/modal.ejs")  %>
+     <%- include("partials/edit-modal.ejs") %>
+     <%- include("partials/footer.ejs") %>

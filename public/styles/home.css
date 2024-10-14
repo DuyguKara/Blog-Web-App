@@ -1,0 +1,154 @@
+html {
+    background-color: #ECDFCC;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.entrance {
+    position: relative;
+    top: 100px;
+    border-radius: 25px;
+    background-color: #697565;
+    box-shadow: 5px 10px 18px #888888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-img {
+    width: 100%;
+    height: 30vh;
+    border-radius: 25px;
+}
+
+.banner-img > img{
+    border-radius: 25px;
+    width: 100%;
+    height: 30vh;
+    object-fit: contain;
+}
+
+.banner-content {
+    width: 100%;
+    text-align: center;
+    text-shadow: 5px 5px 18px #ECDFCC;
+    font-size: 4vw;
+    margin-left: 4vw;
+}
+
+@media screen and (max-width: 992px){
+    .banner-img {
+        height: 25vh;
+    }
+    
+    .banner-img > img{
+        height: 25vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .banner-img {
+        height: 20vh;
+    }
+    
+    .banner-img > img{
+        height: 20vh;
+    }
+
+    header {
+        border-radius: 25px;
+        padding-bottom: 35px;
+    }
+
+}
+
+@media screen and (max-width: 576px){
+    .banner-img {
+        height: 15vh;
+    }
+    
+    .banner-img > img{
+        height: 15vh;
+    }
+
+    .banner-content {
+        font-size: 23px;
+    }
+}
+
+header {
+    background-color: #697565;
+    border-radius: 25px;
+}
+
+/* ------------------------------------------------------------- */
+
+
+.grid-container {
+    border-radius: 25px;
+    background-image: linear-gradient(rgb(24, 28, 20,0.5),rgba(60, 61, 55, 0.221));
+    box-shadow: 5px 10px 18px #888888;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position:relative;
+    top: 130px;
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px){
+
+    .grid-container {
+        top: 100px;
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
+
+.item{
+    box-shadow: 5px 10px 18px #181C14;
+    border-radius: 25px;
+    background-color: #181C14;
+}
+
+.item-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdown {
+    padding: 10px 0px 5px 28px;
+    align-self: flex-start;
+}
+
+.item-img {
+    padding: 0px 25px 15px 25px;
+}
+
+.item-img > img {
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    border: 2px dashed white;
+}
+
+.item p {
+    padding: 0px 25px;
+}
+
+#text-link {
+    color: #697565;
+}
+
+/* ------------------------------------------------------------- */
+
+footer {
+    position: relative;
+    text-align: center;
+    top: 170px;
+    color: #181C14;
+    padding-bottom: 25px;
+}

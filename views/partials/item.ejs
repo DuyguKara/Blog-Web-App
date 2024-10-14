@@ -1,0 +1,33 @@
+<!-- locals kullanmak zorundayım çünkü henüz bir veri oluşturulmadıysa undefined olacağı için hata verip site çöker.
+ locals ile daha önce sunucu tarafında tanımlanmış olduğuna ulaşabiliyorum henüz veri olmasa da undefined'a düşmüyor.
+ 
+ eğer posts varsa ve genişliği 0dan büyükse posts dizisi içinde bir foreach döngüsü başlatıyorum.
+ 
+ bu döngü içine item sınıflı elementi aldım. her döngü başına bu kodlar tekrar edecek. ve gelen datalarımı ilgili yerlere yerleştirecek.
+ tüm diziyi dolaşınca bitecek döngü.
+ 
+ eğer dizi boşsa else koşuluna gderek söyledğim html tagını yazacak.-->
+
+<% if(locals.posts && posts.length > 0){ %>
+    <% posts.forEach(post => {%>
+
+<div class="item item-flex">
+    <div class="dropdown">
+        <img class="three-dots" src="assests/svgs/three-dots.svg">
+        <div class="dropdown-content">
+            <p id="edit-post" data-id="<%= post.id %>">Edit</p> </hr>
+            <p id="delete-post" data-id="<%= post.id %>">Delete</p>
+        </div>
+    </div>
+
+    <div class="item-img"><img src="/uploads/<%= post.img %>"></div>
+    <h2><%= post.name %></h2>
+    <p>&nbsp;&nbsp;&nbsp; <%= post.sum %>
+         <a id="text-link" href="/blog/<%= post.id %>">View More</a></p>
+</div>
+
+<% }); %>
+
+<% } else { %>
+    <p>No posts available.</p>
+<% } %>

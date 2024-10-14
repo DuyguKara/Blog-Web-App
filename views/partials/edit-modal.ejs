@@ -1,0 +1,30 @@
+<!-- Edit Modal -->
+<div class="edit-modal">
+    <div class="edit-modal-content">
+        <span class="close">&times;</span>
+        <form class="form-example" enctype= "multipart/form-data">
+            <div class="edit-post-form">
+                <h2>Edit Your Post! 🎀</h2>
+                
+                    <label for="head-edit">Post Name: </label>
+                    <input type="text" name="postName" id="head-edit" minlength="5" placeholder="Min 5 character"/>
+                
+                
+                    <label for="head-img-edit">Image: </label>
+                    <input class="img-input" type="file" accept="image/*" name="image" id="head-img-edit" />
+                
+                
+                    <label for="head-sum-edit">Summary: </label>
+                    <textarea name="summary" id="head-sum-edit" rows="5" cols="50" minlength="100" placeholder="Min 100 character"></textarea>
+                
+              
+                    <label for="head-content-edit">Content: </label>
+                    <textarea name="content" id="head-content-edit" rows="7" cols="50" minlength="300" placeholder="Min 300 character"></textarea>
+              
+              
+                    <input class="save-button" type="submit" value="Save!" />
+              
+            </div>
+          </form>
+    </div>
+</div>

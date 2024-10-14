@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/modal.css">
+    <link rel="stylesheet" href="../styles/dropdown.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <div class="nav-flex">
+            <a id="home-link" href="home.html">Home</a>
+            <div class="add-flex">
+                <p>Create A New Post</p>
+                <img src="../assests/svgs/plus.svg" alt="plus shape for add new blog">
+            </div>
+        </div>
+        </nav>
+
+        <div class="entrance">
+            <div class="banner-content"><p>Welcome To My Blog!</p></div>
+            <div class="banner-img"><img src="../assests/imgs/Banner.png"></div>
+        </div>
+    </header>
+
+    <div class="grid-container">
+        <div class="item item-flex">
+            <div class="dropdown">
+                <img class="three-dots" src="../assests/svgs/three-dots.svg">
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a> </hr>
+                    <a href="#">Link 2</a>
+                </div>
+            </div>
+            <div class="item-img"><img src="../assests/imgs/Banner.png"></div>
+            <h2>Başlık Başlık</h2>
+            <p>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare lorem ex, vitae tempus lorem iaculis ac. Phasellus sed tempus ligula. Integer a ligula mattis, auctor mauris in, tempor risus. Vestibulum et tellus eleifend, venenatis neque non, ullamcorper ligula. Donec tempus urna nunc, non rhoncus ligula tristique quis. Sed nec felis et diam semper mattis ac a sapien. Proin mattis dui eget metus suscipit, eget auctor nunc eleifend. Aenean magna quam, accumsan quis risus quis, vehicula posuere urna. Proin nisi purus, tempor quis nibh non, viverra eleifend risus. <a id="text-link" href="">View More</a></p>
+        </div>
+        <div class="item item-flex">
+            <div class="dropdown">
+                <img class="three-dots" src="../assests/svgs/three-dots.svg">
+                <div class="dropdown-content">
+                    <a href="#">Link 1 edit</a> </hr>
+                    <a href="#">Link 2 delete</a>
+                </div>
+            </div>
+            <div class="item-img"><img src="../assests/imgs/Banner.png"></div>
+            <h2>Başlık Başlık</h2>
+            <p>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare lorem ex, vitae tempus lorem iaculis ac. Phasellus sed tempus ligula. Integer a ligula mattis, auctor mauris in, tempor risus. Vestibulum et tellus eleifend, venenatis neque non, ullamcorper ligula. Donec tempus urna nunc, non rhoncus ligula tristique quis. Sed nec felis et diam semper mattis ac a sapien. Proin mattis dui eget metus suscipit, eget auctor nunc eleifend. Aenean magna quam, accumsan quis risus quis, vehicula posuere urna. Proin nisi purus, tempor quis nibh non, viverra eleifend risus. <a id="text-link" href="">View More</a></p>
+        </div>
+        <div class="item item-flex">
+            <div class="dropdown">
+                <img class="three-dots" src="../assests/svgs/three-dots.svg">
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a> </hr>
+                    <a href="#">Link 2</a>
+                </div>
+            </div>
+            <div class="item-img"><img src="../assests/imgs/Banner.png"></div>
+            <h2>Başlık Başlık</h2>
+            <p>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare lorem ex, vitae tempus lorem iaculis ac. Phasellus sed tempus ligula. Integer a ligula mattis, auctor mauris in, tempor risus. Vestibulum et tellus eleifend, venenatis neque non, ullamcorper ligula. Donec tempus urna nunc, non rhoncus ligula tristique quis. Sed nec felis et diam semper mattis ac a sapien. Proin mattis dui eget metus suscipit, eget auctor nunc eleifend. Aenean magna quam, accumsan quis risus quis, vehicula posuere urna. Proin nisi purus, tempor quis nibh non, viverra eleifend risus. <a id="text-link" href="">View More</a></p>
+            <!-- paragrafın başına boşluk eklemek için text indent css özelliği koyarsan da yapıyor-->
+        </div>
+    </div>
+
+<!-- Modal -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="/submit" method="post" class="form-example">
+                <div class="create-post-form">
+                    <h2>Create A Post! 🎀</h2>
+                    
+                        <label for="head">Post Name: </label>
+                        <input type="text" name="postName" id="head" minlength="5" placeholder="Min 5 character" required />
+                    
+                    
+                        <label for="head-img">Image: </label>
+                        <input class="img-input" type="file" accept="image/*" name="image" id="head-img" required />
+                    
+                    
+                        <label for="head-sum">Summary: </label>
+                        <textarea name="summary" id="head-sum" rows="5" cols="50" minlength="5" placeholder="Min 100 character" required ></textarea>
+                    
+                  
+                        <label for="head-content">Content: </label>
+                        <textarea name="content" id="head-content" rows="7" cols="50" minlength="5" placeholder="Min 300 character" required></textarea>
+                  
+                  
+                        <input class="create-button" type="submit" value="Create!" />
+                  
+                </div>
+              </form>
+        </div>
+    </div>
+    
+    <footer>&copy Copyrights Duygu Kara  2024</footer>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../page.js"></script>
+
+</body>
+</html>

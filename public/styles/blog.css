@@ -1,0 +1,125 @@
+html {
+    background-color: #ECDFCC;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-image: linear-gradient(rgba(24, 28, 20,0.5), rgba(105, 117, 101, 0.5));
+}
+
+body {
+    margin: 0;
+    
+}
+
+h1 {
+    position: relative;
+    top: 130px;
+    text-align: center;
+    font-size: 3vw;
+    text-shadow: 5px 5px 18px #FFFFFF;
+    margin-bottom: 160px;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width:1200px){
+    h1 {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width:768px){
+    h1 {
+        font-size: 5vw;
+    }
+}
+
+/* .flex-container {
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+} 
+
+.head-content img {
+    max-width: 70%;
+    object-fit:cover;
+    border: 2px dashed white;
+   /* filter: blur(2px); resme blur ekliyor
+}
+
+.head-content p {
+    max-width: 70%;
+    padding: 15px;
+    margin-bottom: 30px;
+    color: #181C14;
+    background-color: #181C1480;
+    border-radius: 8px;
+    font-size: larger;
+} */
+
+
+.head-of-post {
+    margin-top: 150px!important;
+    max-width: 70%;
+    margin: auto;
+    margin-bottom: 250px;
+}
+
+.head-of-post img {
+    width: 400px;
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+}
+
+.head-of-post p {
+    padding-top: 20px;
+    text-indent: 10px;
+}
+
+@media screen and (max-width: 786px) {
+    .head-of-post {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        margin: 0px 50px;
+    }
+
+    .head-of-post img {
+        float: none;
+        width: 90%;
+        padding-left: 30px;
+    }
+
+    .head-of-post p {
+        padding-top: 0;
+        background-color: #181C1480;
+        border-radius: 8px;
+        padding: 15px;
+        text-align: center;
+    }
+}
+
+.content {
+    background-color: #697565;
+    padding: 50px 150px;
+    text-align: center;
+}
+
+@media screen and (max-width: 786px) {
+    .content {
+        padding: 50px 50px;
+    }
+}
+
+footer {
+    text-align: center;
+    top: 170px;
+    color: #181C14;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}

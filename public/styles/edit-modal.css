@@ -1,0 +1,79 @@
+.edit-modal {
+    display: none;
+    background-color: #181C1480;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    z-index: 2;
+  }
+
+  .edit-modal-content {
+    background-color: #ECDFCC;
+    color: #181C14;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    border-radius: 25px;
+  }
+
+  .close {
+    color: #697565;
+    float: right;
+    font-size: 38px;
+    cursor: pointer;
+  }
+
+  .close:hover {
+    color: #181C14;
+  }
+
+  .edit-post-form {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  label {
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+
+  .save-button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #697565;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    border-radius: 25px;
+    border: 0px;
+    font-size: medium;
+    box-shadow: 2px 2px 10px #181C14;
+    cursor: pointer;
+    width: 100px;
+  }
+
+  .save-button:hover {
+    background-color: #3C3D37;
+  }
+
+  textarea {
+    resize: none;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+  }
+
+  input {
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    padding: 5px;
+  }

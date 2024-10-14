@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+
+    <link rel="stylesheet" href="../styles/blog.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/modal.css">
+    <link rel="stylesheet" href="../styles/dropdown.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <div class="nav-flex">
+            <a id="home-link" href="home.html">Home</a>
+            <div class="add-flex">
+                <p>Create A New Post</p>
+                <img src="../assests/svgs/plus.svg" alt="plus shape for add new blog">
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+       <!--  <div class="head-of-post">
+            <div class="head-content">
+                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                <div class="flex-container">
+                    <img src="../assests/imgs/Banner.png">
+                    <p>&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare lorem ex, vitae tempus lorem iaculis ac. Phasellus sed tempus ligula. Integer a ligula mattis, auctor mauris in, tempor risus. Vestibulum et tellus eleifend, venenatis neque non, ullamcorper ligula. Donec tempus urna nunc, non rhoncus ligula tristique quis. Sed nec felis et diam semper mattis ac a sapien. Proin mattis dui eget metus suscipit, eget auctor nunc eleifend. Aenean magna quam, accumsan quis risus quis, vehicula posuere urna. Proin nisi purus, tempor quis nibh non, viverra eleifend risus.</p>
+                </div>
+            </div>
+        </div> -->
+
+        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+
+        <div class="head-of-post">
+            <img src="../assests/imgs/Banner.png">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare lorem ex, vitae tempus lorem iaculis ac. Phasellus sed tempus ligula. Integer a ligula mattis, auctor mauris in, tempor risus. Vestibulum et tellus eleifend, venenatis neque non, ullamcorper ligula. Donec tempus urna nunc, non rhoncus ligula tristique quis. Sed nec felis et diam semper mattis ac a sapien. Proin mattis dui eget metus suscipit, eget auctor nunc eleifend. Aenean magna quam, accumsan quis risus quis, vehicula posuere urna. Proin nisi purus, tempor quis nibh non, viverra eleifend risus. </p>
+        </div>
+
+
+        <div class="content">
+            <p>Curabitur auctor tortor sit amet orci convallis, sed bibendum tellus aliquam. Donec porttitor libero ut nunc faucibus, vel auctor neque feugiat. Vestibulum sit amet tellus ut orci mollis maximus sit amet nec nisl. Cras sit amet magna orci. Mauris mauris ipsum, fringilla non tincidunt et, luctus pellentesque sem. Aliquam eros risus, malesuada vel fermentum at, semper placerat ligula. Aliquam eu nisl diam. Sed consequat, justo quis volutpat sagittis, orci lacus tempus ligula, sit amet sollicitudin neque lectus id est. Nam nec odio non dolor tincidunt fermentum. Praesent commodo lorem quis velit tempus, vitae accumsan urna pretium. Cras consequat sem sollicitudin justo facilisis tincidunt. In ultricies mi non congue gravida.
+
+                Ut purus lectus, pulvinar in ipsum at, posuere semper nibh. Vivamus ultrices a neque sit amet pretium. Phasellus in libero at ante suscipit ornare. Aliquam eget tristique lorem, vel posuere nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam semper luctus hendrerit. Nunc in semper elit. Nullam sit amet lobortis lectus, ut dignissim dolor. Vestibulum gravida ultricies turpis, a suscipit ante blandit eget. Integer vehicula vel risus in egestas.
+                
+                Pellentesque ut ipsum tristique tortor tristique imperdiet. Fusce aliquam mi leo, non blandit sem pharetra id. Cras porta turpis ac congue eleifend. Sed sed quam lorem. Cras in vulputate nisl. Nulla vel finibus justo. Vestibulum posuere, neque dignissim tempus malesuada, erat nisl lobortis diam, ac efficitur massa augue eget tellus. Nulla id lobortis enim. Curabitur odio sapien, egestas a sapien quis, auctor molestie lectus. In ac leo turpis. Aenean quis est sit amet sapien eleifend mattis eu at lorem. Pellentesque interdum orci dui, congue luctus libero scelerisque sed.</p>
+        </div>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="" method="get" class="form-example">
+                <div class="create-post-form">
+                    <h2>Create A Post! 🎀</h2>
+                    
+                        <label for="head">Post Name: </label>
+                        <input type="text" name="postName" id="head" minlength="5" placeholder="Min 5 character" required />
+                    
+                    
+                        <label for="head-img">Image: </label>
+                        <input class="img-input" type="file" accept="image/*" name="image" id="head-img" required />
+                    
+                    
+                        <label for="head-sum">Summary: </label>
+                        <textarea name="summary" id="head-sum" rows="5" cols="50" minlength="100" placeholder="Min 100 character" required ></textarea>
+                    
+                  
+                        <label for="head-content">Content: </label>
+                        <textarea name="content" id="head-content" rows="7" cols="50" minlength="300" placeholder="Min 300 character" required></textarea>
+                  
+                  
+                        <input class="create-button" type="submit" value="Create!" />
+                  
+                </div>
+              </form>
+        </div>
+    </div>
+
+    <footer>&copy Copyrights Duygu Kara  2024</footer>
+
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <script src="../page.js"></script>
+</body>
+</html>

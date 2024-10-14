@@ -1,0 +1,30 @@
+<!-- Modal -->
+<div class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form action="/" method="post" class="form-example" onsubmit="return validateForm()" enctype= "multipart/form-data">
+            <div class="create-post-form">
+                <h2>Create A Post! 🎀</h2>
+                
+                    <label for="head">Post Name: </label>
+                    <input type="text" name="postName" id="head" minlength="5" placeholder="Min 5 character"/>
+                
+                
+                    <label for="head-img">Image: </label>
+                    <input class="img-input" type="file" accept="image/*" name="image" id="head-img" />
+                
+                
+                    <label for="head-sum">Summary: </label>
+                    <textarea name="summary" id="head-sum" rows="5" cols="50" minlength="100" placeholder="Min 100 character"></textarea>
+                
+              
+                    <label for="head-content">Content: </label>
+                    <textarea name="content" id="head-content" rows="7" cols="50" minlength="300" placeholder="Min 300 character"></textarea>
+              
+              
+                    <input class="create-button" type="submit" value="Create!" />
+              
+            </div>
+          </form>
+    </div>
+</div>
